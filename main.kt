@@ -12,8 +12,16 @@ fun main(){
         if(Color.valueOf("${list[index]}").diff() == true ){
             println("у вас сложный день по цвету")
         }
+        if (Color.valueOf("${list[index]}").temperature() == true){
+            println("${Color.valueOf("${list[index]}").colorName()} => Теплый цвет")
+        }
+        else{
+            println("${Color.valueOf("${list[index]}").colorName()} => Холодный цвет")
+        }
     }
     else if (otv == "нет"){
+
+
         println("программа завершила свою работу")
     }
     else{
